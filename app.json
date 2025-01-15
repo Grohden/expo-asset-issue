@@ -1,4 +1,7 @@
 {
   "name": "AwesomeProject",
-  "displayName": "AwesomeProject"
+  "displayName": "AwesomeProject",
+  "expo": {
+    "jsEngine":  "jsc"
+  }
 }
