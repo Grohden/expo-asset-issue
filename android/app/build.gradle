@@ -110,6 +110,18 @@ android {
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
     }
+    // for expo https://docs.expo.dev/build-reference/variants/#in-bare-project
+    flavorDimensions "env"
+    productFlavors {
+        staging {
+            dimension "env"
+            applicationId 'com.awesomeproject'
+        }
+        production {
+            dimension "env"
+            applicationId 'com.awesomeproject'
+        }
+    }
 }
 
 dependencies {
