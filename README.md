@@ -1,6 +1,6 @@
 ## Expo issue with hermes and assets ONLY in release builds
 
-This is a reproduction of the issue: TODO ADD LINK
+This is a reproduction of the issue: https://github.com/expo/expo/issues/34166
 
 The issue is that the assets are not loading in the release build when hermes is disabled.
 
