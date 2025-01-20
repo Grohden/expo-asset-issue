@@ -4,12 +4,16 @@ import {
   SafeAreaView,
   StatusBar,
   StyleSheet,
-  useColorScheme, View,
+  Text,
+  useColorScheme,
+  View,
 } from 'react-native';
 
 import {
   Colors,
 } from 'react-native/Libraries/NewAppScreen';
+
+import { Images } from './src/assets';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -27,7 +31,8 @@ function App(): React.JSX.Element {
       <View
         style={[backgroundStyle, styles.flex1, styles.alignCenter, styles.justifyCenter]}
       >
-        <Image source={require('./src/assets/images/image.png')} style={styles.square100} />
+        <Image source={Images.dawg} style={styles.square100} />
+        <Text>Dawg blink ;D</Text>
       </View>
     </SafeAreaView>
   );

@@ -1,7 +1,5 @@
 {
   "name": "AwesomeProject",
   "displayName": "AwesomeProject",
-  "expo": {
-    "jsEngine":  "jsc"
-  }
+  "jsEngine":  "jsc"
 }
