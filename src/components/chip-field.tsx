@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
-import { TextInput, View } from 'react-native';
+import { Text, TextInput, View } from 'react-native';
 
 import { tw } from '../tw';
 import { Chip } from './chip';
 import { FieldContainer } from './field-container';
 
-export const ChipField = () => {
+export const ChipField = (props: {
+  value?: string;
+  placeholder?: string;
+}) => {
   const [list, setList] = useState(() =>
     new Array(10).fill(0).map((_, i) => i),
   );
@@ -13,7 +16,9 @@ export const ChipField = () => {
   return (
     <View style={[tw.flex1, tw.gap8]}>
       <FieldContainer>
-        <TextInput style={[tw.flex1]} placeholder="Placeholder" />
+        <Text style={[props.placeholder && tw.textNeutral]}>
+          {props.value || props.placeholder}
+        </Text>
       </FieldContainer>
       <View style={[tw.flexRow, tw.wrap, tw.gap8]}>
         {list.map((i) => (

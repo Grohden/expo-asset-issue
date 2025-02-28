@@ -14,7 +14,7 @@ export const Chip = (props: { text: string; onPress?: () => void }) => (
         tw.itemsCenter,
         tw.ph16,
         tw.pv6,
-        tw.bgNeutralHigher,
+        tw.bgNeutralLower,
         tw.rounded16,
       ]}
     >

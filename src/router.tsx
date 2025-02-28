@@ -5,7 +5,7 @@ import {
 import React from 'react';
 
 import { LandingPage } from './pages/landing-page';
-import { TestPage } from './pages/test-page';
+import { TestPage } from './pages/test/test-page';
 
 const Modal = createStackNavigator();
 

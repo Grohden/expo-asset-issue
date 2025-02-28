@@ -31,7 +31,7 @@ export function LandingPage() {
       />
       <Pressable
         onPress={() => navigation.navigate('TestPage')}
-        style={[backgroundStyle, tw.flex1, tw.alignCenter, tw.justifyCenter]}
+        style={[backgroundStyle, tw.flex1, tw.itemsCenter, tw.justifyCenter]}
       >
         <Image source={Images.image} style={tw.square100} />
         <Text>Click me!</Text>

@@ -1,6 +1,17 @@
 import { StyleSheet } from 'react-native';
 
+const colors = {
+  white: '#FFFFFF',
+  neutralHigher: '#818181',
+  neutralHigh: '#5E5C5C',
+  neutral: '#E4E2DE',
+  neutralLow: '#EDEDED',
+  neutralLower: '#F9F9F9',
+};
+
 export const tw = StyleSheet.create({
+  debugOutline: { borderColor: 'red', borderWidth: 1 },
+
   flex1: { flex: 1 },
 
   flexRow: { flexDirection: 'row' },
@@ -8,10 +19,11 @@ export const tw = StyleSheet.create({
 
   wrap: { flexWrap: 'wrap' },
 
-  alignCenter: { alignItems: 'center' },
   justifyCenter: { justifyContent: 'center' },
 
   itemsCenter: { alignItems: 'center' },
+
+  selfCenter: { alignSelf: 'center' },
 
   pv6: { paddingVertical: 6 },
   pv24: { paddingVertical: 24 },
@@ -27,12 +39,15 @@ export const tw = StyleSheet.create({
 
   border1: { borderWidth: 1 },
 
-  borderNeutral: { borderColor: '#E4E2DE' },
+  borderNeutral: { borderColor: colors.neutral },
 
-  bgWhite: { backgroundColor: '#FFFFFF' },
-  bgNeutralHigher: { backgroundColor: '#F9F8F7' },
+  bgWhite: { backgroundColor: colors.white },
+  bgNeutralHigher: { backgroundColor: colors.neutralHigher },
+  bgNeutralLow: { backgroundColor: colors.neutralLow },
+  bgNeutralLower: { backgroundColor: colors.neutralLower },
 
-  textNeutralHigh: { color: '#5E5C5C' },
+  textNeutralHigh: { color: colors.neutralHigh },
+  textNeutral: { color: colors.neutral },
 
   gap8: { gap: 8 },
   gap16: { gap: 16 },

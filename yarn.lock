@@ -3248,14 +3248,17 @@ __metadata:
     expo-updates: "npm:~0.26.13"
     jest: "npm:^29.6.3"
     react: "npm:18.3.1"
+    react-hook-form: "npm:7.34.2"
     react-native: "npm:0.76.6"
     react-native-gesture-handler: "npm:^2.21.2"
     react-native-keyboard-controller: "npm:^1.16.6"
     react-native-reanimated: "npm:~3.16.1"
     react-native-safe-area-context: "npm:^4.12.0"
     react-native-screens: "npm:^4.4.0"
+    react-native-scroll-into-view: "npm:^2.0.2"
     react-test-renderer: "npm:18.3.1"
     typescript: "npm:5.0.4"
+    yup: "npm:1.6.1"
   languageName: unknown
   linkType: soft
 
@@ -8302,7 +8305,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.8.1":
+"prop-types@npm:>=15.6.1, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -8310,6 +8313,13 @@ __metadata:
     object-assign: "npm:^4.1.1"
     react-is: "npm:^16.13.1"
   checksum: 10c0/59ece7ca2fb9838031d73a48d4becb9a7cc1ed10e610517c7d8f19a1e02fa47f7c27d557d8a5702bec3cfeccddc853579832b43f449e54635803f277b1c78077
+  languageName: node
+  linkType: hard
+
+"property-expr@npm:^2.0.5":
+  version: 2.0.6
+  resolution: "property-expr@npm:2.0.6"
+  checksum: 10c0/69b7da15038a1146d6447c69c445306f66a33c425271235bb20507f1846dbf9577a8f9dfafe8acbfcb66f924b270157f155248308f026a68758f35fc72265b3c
   languageName: node
   linkType: hard
 
@@ -8414,6 +8424,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-hook-form@npm:7.34.2":
+  version: 7.34.2
+  resolution: "react-hook-form@npm:7.34.2"
+  peerDependencies:
+    react: ^16.8.0 || ^17 || ^18
+  checksum: 10c0/da4f1c519ad4e365c7094166df638ed9d3f72579e6c7803c182567c51676e6fd16c84e5adb0a756a052be5850aa114403476d03fa694c6ae95c242983042aaed
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.12.0 || ^17.0.0 || ^18.0.0, react-is@npm:^18.0.0, react-is@npm:^18.3.1":
   version: 18.3.1
   resolution: "react-is@npm:18.3.1"
@@ -8515,6 +8534,18 @@ __metadata:
     react: "*"
     react-native: "*"
   checksum: 10c0/2debc26beea458996873d66741d7d57653507852f67e5cf73011cc28770bb659cbb6b3060e35892ad0cd8db4f4e64198f94bc2085681f1450b6b446253553454
+  languageName: node
+  linkType: hard
+
+"react-native-scroll-into-view@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "react-native-scroll-into-view@npm:2.0.2"
+  dependencies:
+    prop-types: "npm:>=15.6.1"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 10c0/c166a863acd888c928d6d7d379e1622a274d451584941d22da2b32c1854a1bd1ace6761fed37e21f99cd75992f0b22531ed9987726cc2beb6d7655a895212236
   languageName: node
   linkType: hard
 
@@ -9724,6 +9755,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tiny-case@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "tiny-case@npm:1.0.3"
+  checksum: 10c0/c0cbed35884a322265e2cd61ff435168d1ea523f88bf3864ce14a238ae9169e732649776964283a66e4eb882e655992081d4daf8c865042e2233425866111b35
+  languageName: node
+  linkType: hard
+
 "tmp@npm:^0.0.33":
   version: 0.0.33
   resolution: "tmp@npm:0.0.33"
@@ -9753,6 +9791,13 @@ __metadata:
   version: 1.0.1
   resolution: "toidentifier@npm:1.0.1"
   checksum: 10c0/93937279934bd66cc3270016dd8d0afec14fb7c94a05c72dc57321f8bd1fa97e5bea6d1f7c89e728d077ca31ea125b78320a616a6c6cd0e6b9cb94cb864381c1
+  languageName: node
+  linkType: hard
+
+"toposort@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "toposort@npm:2.0.2"
+  checksum: 10c0/ab9ca91fce4b972ccae9e2f539d755bf799a0c7eb60da07fd985fce0f14c159ed1e92305ff55697693b5bc13e300f5417db90e2593b127d421c9f6c440950222
   languageName: node
   linkType: hard
 
@@ -9802,6 +9847,13 @@ __metadata:
   version: 0.7.1
   resolution: "type-fest@npm:0.7.1"
   checksum: 10c0/ce6b5ef806a76bf08d0daa78d65e61f24d9a0380bd1f1df36ffb61f84d14a0985c3a921923cf4b97831278cb6fa9bf1b89c751df09407e0510b14e8c081e4e0f
+  languageName: node
+  linkType: hard
+
+"type-fest@npm:^2.19.0":
+  version: 2.19.0
+  resolution: "type-fest@npm:2.19.0"
+  checksum: 10c0/a5a7ecf2e654251613218c215c7493574594951c08e52ab9881c9df6a6da0aeca7528c213c622bc374b4e0cb5c443aa3ab758da4e3c959783ce884c3194e12cb
   languageName: node
   linkType: hard
 
@@ -10416,5 +10468,17 @@ __metadata:
   version: 0.1.0
   resolution: "yocto-queue@npm:0.1.0"
   checksum: 10c0/dceb44c28578b31641e13695d200d34ec4ab3966a5729814d5445b194933c096b7ced71494ce53a0e8820685d1d010df8b2422e5bf2cdea7e469d97ffbea306f
+  languageName: node
+  linkType: hard
+
+"yup@npm:1.6.1":
+  version: 1.6.1
+  resolution: "yup@npm:1.6.1"
+  dependencies:
+    property-expr: "npm:^2.0.5"
+    tiny-case: "npm:^1.0.3"
+    toposort: "npm:^2.0.2"
+    type-fest: "npm:^2.19.0"
+  checksum: 10c0/84c2b53996e8001041239cf2719851719f67063ec7cd843067df73562353216f5ad4f8a222319696882d5a6058e528fade1e463c59d70cbffb41b99cd0d7571b
   languageName: node
   linkType: hard
