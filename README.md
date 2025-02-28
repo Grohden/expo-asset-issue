@@ -5,8 +5,17 @@ configs I'm using currently.
 
 Reproduction cases will be mainly in branches.
 
-
 ## This branch issue:
 
-
 https://github.com/slorber/react-native-scroll-into-view/issues/60
+
+### How to reproduce
+
+```
+yarn install
+yarn ios
+
+click on the dogo
+open a form seciton
+click on trigger validations
+```
