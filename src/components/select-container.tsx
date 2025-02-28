@@ -1,6 +1,7 @@
-import {Text} from 'react-native';
-import {FieldContainer} from './field-container';
 import React from 'react';
+import { Text } from 'react-native';
+
+import { FieldContainer } from './field-container';
 
 export const SelectContainer = () => (
   <FieldContainer>

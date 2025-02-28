@@ -1,11 +1,11 @@
-import {Pressable, View} from 'react-native';
-import React from 'react';
+import type React from 'react';
+import { Pressable, View } from 'react-native';
 
-import {tw} from '../tw';
+import { tw } from '../tw';
 
 const noop = () => {};
 
-export const FieldContainer = ({children}: {children: React.ReactNode}) => (
+export const FieldContainer = ({ children }: { children: React.ReactNode }) => (
   <Pressable
     style={[
       tw.flexRow,
@@ -16,7 +16,8 @@ export const FieldContainer = ({children}: {children: React.ReactNode}) => (
       tw.itemsCenter,
       tw.ph12,
     ]}
-    onPress={noop}>
+    onPress={noop}
+  >
     <View style={tw.flex1}>{children}</View>
   </Pressable>
 );

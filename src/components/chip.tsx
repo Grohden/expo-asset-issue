@@ -1,11 +1,11 @@
-import {Pressable, Text} from 'react-native';
 import React from 'react';
+import { Pressable, Text } from 'react-native';
 
-import {tw} from '../tw';
-import {EnterExitAnimatedView} from './enter-exit-animated-view';
-import {layoutAnimation} from '../styles-animation';
+import { layoutAnimation } from '../styles-animation';
+import { tw } from '../tw';
+import { EnterExitAnimatedView } from './enter-exit-animated-view';
 
-export const Chip = (props: {onPress?: () => void}) => (
+export const Chip = (props: { text: string; onPress?: () => void }) => (
   <EnterExitAnimatedView layout={layoutAnimation.default}>
     <Pressable
       onPress={props.onPress}
@@ -16,8 +16,9 @@ export const Chip = (props: {onPress?: () => void}) => (
         tw.pv6,
         tw.bgNeutralHigher,
         tw.rounded16,
-      ]}>
-      <Text>Chip</Text>
+      ]}
+    >
+      <Text>{props.text}</Text>
     </Pressable>
   </EnterExitAnimatedView>
 );

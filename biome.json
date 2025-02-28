@@ -1,0 +1,63 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+  "files": {
+    "maxSize": 4000000,
+    "ignore": [
+      "./scripts",
+      "./ios",
+      "./android",
+      "./src/assets/*.json",
+      ".storybook/storybook.requires.ts",
+      "./tmp",
+      "./.idea",
+      "./vendor"
+    ]
+  },
+  "organizeImports": {
+    "enabled": true
+  },
+  "formatter": {
+    "ignore": ["./package.json"],
+    "enabled": true,
+    "indentStyle": "space"
+  },
+  "linter": {
+    "ignore": ["./src/generated/**"],
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "complexity": {
+        "noUselessSwitchCase": "off"
+      },
+      "correctness": {
+        "useHookAtTopLevel": "error"
+      },
+      "style": {
+        "noNonNullAssertion": "off",
+        "useNodejsImportProtocol": "off",
+        "useBlockStatements": "error",
+        "useConsistentArrayType": {
+          "level": "error",
+          "options": {
+            "syntax": "shorthand"
+          }
+        },
+        "useFilenamingConvention": {
+          "level": "error",
+          "options": {
+            "filenameCases": ["kebab-case"],
+            "requireAscii": true
+          }
+        }
+      },
+      "nursery": {
+        "useConsistentCurlyBraces": "error"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single"
+    }
+  }
+}

@@ -1,13 +1,14 @@
 import React from 'react';
-import {FormSectionTitle} from './form-section-title';
-import {tw} from '../tw';
-import {FormSection} from './form-section';
-import {useBooleanController} from '../hooks/use-boolean-controller';
-import {TextField} from './text-field';
-import {SelectContainer} from './select-container';
-import {ChipField} from './chip-field';
-import {EnterExitAnimatedView} from './enter-exit-animated-view';
-import {FadeIn, FadeOut} from 'react-native-reanimated';
+import { FadeIn, FadeOut } from 'react-native-reanimated';
+
+import { useBooleanController } from '../hooks/use-boolean-controller';
+import { tw } from '../tw';
+import { ChipField } from './chip-field';
+import { EnterExitAnimatedView } from './enter-exit-animated-view';
+import { FormSection } from './form-section';
+import { FormSectionTitle } from './form-section-title';
+import { SelectContainer } from './select-container';
+import { TextField } from './text-field';
 
 const SubView = () => (
   <EnterExitAnimatedView entering={FadeIn} exiting={FadeOut} style={tw.gap16}>

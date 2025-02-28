@@ -1,7 +1,8 @@
 import React from 'react';
-import {Text, TouchableOpacity, View} from 'react-native';
-import {tw} from '../tw';
-import {BooleanController} from '../hooks/use-boolean-controller';
+import { Text, TouchableOpacity, View } from 'react-native';
+
+import type { BooleanController } from '../hooks/use-boolean-controller';
+import { tw } from '../tw';
 
 export const FormSectionTitle = ({
   title,
@@ -12,7 +13,8 @@ export const FormSectionTitle = ({
 }) => (
   <TouchableOpacity
     style={[tw.flexRow, tw.gap16, tw.itemsCenter]}
-    onPress={openController.toggle}>
+    onPress={openController.toggle}
+  >
     <View style={[tw.gap8, tw.flexRow, tw.itemsCenter]}>
       <Text>{openController.value ? '<' : '>'}</Text>
       <Text style={tw.flex1}>{title}</Text>

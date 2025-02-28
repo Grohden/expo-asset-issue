@@ -7,9 +7,7 @@
       "projectId": "3b8c0f29-0bfc-4dae-baf2-5c397e1e4c5f"
     }
   },
-  "assetBundlePatterns": [
-    "./src/assets/**/*.png"
-  ],
+  "assetBundlePatterns": ["./src/assets/**/*.png"],
   "runtimeVersion": "1.0.0",
   "updates": {
     "url": "https://u.expo.dev/3b8c0f29-0bfc-4dae-baf2-5c397e1e4c5f"

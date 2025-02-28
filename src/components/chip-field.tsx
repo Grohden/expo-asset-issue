@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
-import {TextInput, View} from 'react-native';
+import React, { useState } from 'react';
+import { TextInput, View } from 'react-native';
 
-import {FieldContainer} from './field-container';
-import {tw} from '../tw';
-import {Chip} from './chip';
+import { tw } from '../tw';
+import { Chip } from './chip';
+import { FieldContainer } from './field-container';
 
 export const ChipField = () => {
   const [list, setList] = useState(() =>
@@ -16,11 +16,12 @@ export const ChipField = () => {
         <TextInput style={[tw.flex1]} placeholder="Placeholder" />
       </FieldContainer>
       <View style={[tw.flexRow, tw.wrap, tw.gap8]}>
-        {list.map(i => (
+        {list.map((i) => (
           <Chip
             key={i}
+            text={`Chip ${i}`}
             onPress={() => {
-              setList(prev => prev.filter((_, j) => j !== i));
+              setList((prev) => prev.filter((_, j) => j !== i));
             }}
           />
         ))}

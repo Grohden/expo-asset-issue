@@ -1,8 +1,8 @@
 import React from 'react';
-import {TextInput} from 'react-native';
+import { TextInput } from 'react-native';
 
-import {FieldContainer} from './field-container';
-import {tw} from '../tw';
+import { tw } from '../tw';
+import { FieldContainer } from './field-container';
 
 export const TextField = () => {
   return (

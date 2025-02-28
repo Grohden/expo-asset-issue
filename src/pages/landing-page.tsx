@@ -1,5 +1,7 @@
 import 'expo-image';
 import 'expo-dev-client';
+import { useNavigation } from '@react-navigation/native';
+import { Image } from 'expo-image';
 import React from 'react';
 import {
   Pressable,
@@ -8,13 +10,10 @@ import {
   Text,
   useColorScheme,
 } from 'react-native';
+import { Colors } from 'react-native/Libraries/NewAppScreen';
 
-import {Colors} from 'react-native/Libraries/NewAppScreen';
-
-import {tw} from '../tw';
-import {Images} from '../assets';
-import {Image} from 'expo-image';
-import {useNavigation} from '@react-navigation/native';
+import { Images } from '../assets';
+import { tw } from '../tw';
 
 export function LandingPage() {
   const navigation = useNavigation();
@@ -32,8 +31,9 @@ export function LandingPage() {
       />
       <Pressable
         onPress={() => navigation.navigate('TestPage')}
-        style={[backgroundStyle, tw.flex1, tw.alignCenter, tw.justifyCenter]}>
-        <Image source={Images.dawg} style={tw.square100} />
+        style={[backgroundStyle, tw.flex1, tw.alignCenter, tw.justifyCenter]}
+      >
+        <Image source={Images.image} style={tw.square100} />
         <Text>Click me!</Text>
       </Pressable>
     </SafeAreaView>

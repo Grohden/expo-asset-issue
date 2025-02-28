@@ -1,8 +1,11 @@
-import {TransitionPresets, createStackNavigator} from '@react-navigation/stack';
+import {
+  TransitionPresets,
+  createStackNavigator,
+} from '@react-navigation/stack';
 import React from 'react';
 
-import {TestPage} from './pages/test-page';
-import {LandingPage} from './pages/landing-page';
+import { LandingPage } from './pages/landing-page';
+import { TestPage } from './pages/test-page';
 
 const Modal = createStackNavigator();
 
@@ -13,7 +16,8 @@ export function Navigator() {
         screenOptions={{
           ...TransitionPresets.ModalPresentationIOS,
           presentation: 'modal',
-        }}>
+        }}
+      >
         <Modal.Screen name="LandingPage" component={LandingPage} />
         <Modal.Screen name="TestPage" component={TestPage} />
       </Modal.Group>
