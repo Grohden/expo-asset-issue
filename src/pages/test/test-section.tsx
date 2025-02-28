@@ -27,9 +27,10 @@ export const TestSection = ({
 }) => {
   const section = useBooleanController(false, openController);
 
+  form.formState.submitCount; // subscribe to submit count proxy
   const handleSubmit = form.handleSubmit(
-    (data) => console.log(data),
-    (data) => console.log(data),
+    () => {},
+    () => {},
   );
 
   return (
@@ -53,6 +54,7 @@ export const TestSection = ({
                 value={field.value}
                 placeholder={field.name}
                 message={fieldState.error?.message}
+                onChange={field.onChange}
               />
             )}
           />
@@ -89,6 +91,7 @@ export const TestSection = ({
                 value={field.value}
                 placeholder={field.name}
                 message={fieldState.error?.message}
+                onChange={field.onChange}
               />
             )}
           />
