@@ -41,6 +41,10 @@ target 'AwesomeProject' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+  # FS is very archaic and its setup is manual.
+  # https://help.fullstory.com/hc/en-us/articles/360042772333-Getting-Started-with-iOS-Data-Capture
+  pod 'FullStory', :http => 'https://ios-releases.fullstory.com/fullstory-1.56.0-xcframework.tar.gz'
+
   target 'AwesomeProjectTests' do
     inherit! :complete
     # Pods for testing

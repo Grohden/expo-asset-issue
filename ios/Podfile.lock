@@ -286,6 +286,29 @@ PODS:
     - ExpoModulesCore
   - FBLazyVector (0.76.6)
   - fmt (9.1.0)
+  - FullStory (1.56.0)
+  - fullstory_react-native (1.7.2):
+    - DoubleConversion
+    - FullStory (~> 1.14)
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
   - glog (0.3.5)
   - hermes-engine (0.76.6):
     - hermes-engine/Pre-built (= 0.76.6)
@@ -2072,6 +2095,8 @@ DEPENDENCIES:
   - EXUpdatesInterface (from `../node_modules/expo-updates-interface/ios`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - fmt (from `../node_modules/react-native/third-party-podspecs/fmt.podspec`)
+  - "FullStory (from `{:http=>\"https://ios-releases.fullstory.com/fullstory-1.56.0-xcframework.tar.gz\"}`)"
+  - "fullstory_react-native (from `../node_modules/@fullstory/react-native`)"
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - hermes-engine (from `../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec`)
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
@@ -2194,6 +2219,10 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/FBLazyVector"
   fmt:
     :podspec: "../node_modules/react-native/third-party-podspecs/fmt.podspec"
+  FullStory:
+    :http: https://ios-releases.fullstory.com/fullstory-1.56.0-xcframework.tar.gz
+  fullstory_react-native:
+    :path: "../node_modules/@fullstory/react-native"
   glog:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
   hermes-engine:
@@ -2324,6 +2353,10 @@ EXTERNAL SOURCES:
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
+CHECKOUT OPTIONS:
+  FullStory:
+    :http: https://ios-releases.fullstory.com/fullstory-1.56.0-xcframework.tar.gz
+
 SPEC CHECKSUMS:
   boost: 1dca942403ed9342f98334bf4c3621f011aa7946
   DoubleConversion: f16ae600a246532c4020132d54af21d0ddb2a385
@@ -2347,6 +2380,8 @@ SPEC CHECKSUMS:
   EXUpdatesInterface: 7c977640bdd8b85833c19e3959ba46145c5719db
   FBLazyVector: be509404b5de73a64a74284edcaf73a5d1e128b1
   fmt: 10c6e61f4be25dc963c36bd73fc7b1705fe975be
+  FullStory: 8b4f696a867aa2855df6c89f51bd31ac96117f2a
+  fullstory_react-native: d9269edb9dc9d14f62f62cc30ba8e92c1cc4fd77
   glog: 08b301085f15bcbb6ff8632a8ebaf239aae04e6a
   hermes-engine: 1949ca944b195a8bde7cbf6316b9068e19cf53c6
   libavif: 84bbb62fb232c3018d6f1bab79beea87e35de7b7
@@ -2419,6 +2454,6 @@ SPEC CHECKSUMS:
   SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
   Yoga: be6f55a028e86c83ae066f018e9b5d24ffc45436
 
-PODFILE CHECKSUM: d059b79a84097b61054bd7f01561adecd49201bf
+PODFILE CHECKSUM: 90ba757d4f3073787991b002d446573d5e308176
 
 COCOAPODS: 1.14.3

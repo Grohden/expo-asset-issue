@@ -3,6 +3,7 @@ import 'expo-dev-client';
 import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import FullStory from '@fullstory/react-native';
 import {
   SafeAreaProvider,
   initialWindowMetrics,
@@ -17,7 +18,17 @@ function App() {
     <SafeAreaProvider initialMetrics={initialWindowMetrics}>
       <KeyboardProvider>
         <GestureHandlerRootView style={tw.flex1}>
-          <NavigationContainer>
+          <NavigationContainer
+            onStateChange={(state) => {
+              const currentRoute = state?.routes[state.index!];
+
+              if (currentRoute) {
+                FullStory.event('Navigation', {
+                  currentRouteName: currentRoute.name,
+                });
+              }
+            }}
+          >
             <Navigator />
           </NavigationContainer>
         </GestureHandlerRootView>

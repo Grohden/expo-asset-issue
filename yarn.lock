@@ -296,6 +296,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/parser@npm:^7.0.0":
+  version: 7.26.9
+  resolution: "@babel/parser@npm:7.26.9"
+  dependencies:
+    "@babel/types": "npm:^7.26.9"
+  bin:
+    parser: ./bin/babel-parser.js
+  checksum: 10c0/4b9ef3c9a0d4c328e5e5544f50fe8932c36f8a2c851e7f14a85401487cd3da75cad72c2e1bcec1eac55599a6bbb2fdc091f274c4fcafa6bdd112d4915ff087fc
+  languageName: node
+  linkType: hard
+
 "@babel/parser@npm:^7.1.0, @babel/parser@npm:^7.13.16, @babel/parser@npm:^7.14.7, @babel/parser@npm:^7.20.0, @babel/parser@npm:^7.20.7, @babel/parser@npm:^7.23.9, @babel/parser@npm:^7.25.3, @babel/parser@npm:^7.25.9, @babel/parser@npm:^7.26.0, @babel/parser@npm:^7.26.5":
   version: 7.26.5
   resolution: "@babel/parser@npm:7.26.5"
@@ -1598,6 +1609,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/types@npm:^7.26.9":
+  version: 7.26.9
+  resolution: "@babel/types@npm:7.26.9"
+  dependencies:
+    "@babel/helper-string-parser": "npm:^7.25.9"
+    "@babel/helper-validator-identifier": "npm:^7.25.9"
+  checksum: 10c0/999c56269ba00e5c57aa711fbe7ff071cd6990bafd1b978341ea7572cc78919986e2aa6ee51dacf4b6a7a6fa63ba4eb3f1a03cf55eee31b896a56d068b895964
+  languageName: node
+  linkType: hard
+
 "@bcoe/v8-coverage@npm:^0.2.3":
   version: 0.2.3
   resolution: "@bcoe/v8-coverage@npm:0.2.3"
@@ -2074,6 +2095,40 @@ __metadata:
   bin:
     excpretty: build/cli.js
   checksum: 10c0/e524817b2e42fb8c8914fca7e8f7c2f723f4f6d338a57b7ae97cd3e76da8108af63a22d4c7dc2e96a192a248a242f6e0f8056f0ca53bc4fb5cd2e5ae428e0891
+  languageName: node
+  linkType: hard
+
+"@fullstory/babel-plugin-annotate-react@npm:^2.2.0":
+  version: 2.3.1
+  resolution: "@fullstory/babel-plugin-annotate-react@npm:2.3.1"
+  checksum: 10c0/62e77848eb4dea9f3429cdfff6edc2001d75c56c12ad04ae80ec3551f7ffc1f6f755f39f471ea3963b7b0d2c5d0fd3943d15dc9869ccab96215c000f7b1a6f42
+  languageName: node
+  linkType: hard
+
+"@fullstory/babel-plugin-react-native@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "@fullstory/babel-plugin-react-native@npm:1.3.0"
+  dependencies:
+    "@babel/parser": "npm:^7.0.0"
+    "@babel/types": "npm:^7.0.0"
+  checksum: 10c0/31da5fa656a18ba43913a1bb370cebd905371a1fc638ad53c1dbad0d632d88a1bb8e88e198c6c405cea21497b754901cb5577831da991256a094c2e27aa35bb3
+  languageName: node
+  linkType: hard
+
+"@fullstory/react-native@npm:^1.7.2":
+  version: 1.7.2
+  resolution: "@fullstory/react-native@npm:1.7.2"
+  dependencies:
+    "@fullstory/babel-plugin-annotate-react": "npm:^2.2.0"
+    "@fullstory/babel-plugin-react-native": "npm:^1.3.0"
+  peerDependencies:
+    expo: ">=47.0.0"
+    react: "*"
+    react-native: ">=0.66.0"
+  peerDependenciesMeta:
+    expo:
+      optional: true
+  checksum: 10c0/14a5fb926b3d7517508e1df052d6aee072adc0a06a7db3e143f5bf4f78264028bfc6330e633fea1448a64158f8bbebacf2f0da95e83044522b327857ceea0380
   languageName: node
   linkType: hard
 
@@ -3230,6 +3285,7 @@ __metadata:
     "@babel/preset-env": "npm:^7.25.3"
     "@babel/runtime": "npm:^7.25.0"
     "@biomejs/biome": "npm:^1.9.4"
+    "@fullstory/react-native": "npm:^1.7.2"
     "@react-native-community/cli": "npm:15.0.1"
     "@react-native-community/cli-platform-android": "npm:15.0.1"
     "@react-native-community/cli-platform-ios": "npm:15.0.1"

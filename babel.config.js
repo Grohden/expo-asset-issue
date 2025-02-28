@@ -1,4 +1,13 @@
 module.exports = {
   presets: ['babel-preset-expo'],
-  plugins: ['react-native-reanimated/plugin'],
+  plugins: [
+    '@fullstory/react-native',
+    [
+      '@fullstory/babel-plugin-annotate-react',
+      {
+        native: true,
+      },
+    ],
+    'react-native-reanimated/plugin',
+  ],
 };

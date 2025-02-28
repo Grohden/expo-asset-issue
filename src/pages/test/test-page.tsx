@@ -32,6 +32,7 @@ export function TestPage() {
         backgroundColor={backgroundStyle.backgroundColor}
       />
       <CustomScrollView
+        innerRef={(ref) => console.log('scroll view ref', !!ref)}
         contentContainerStyle={{ paddingBottom: Math.max(insets.bottom, 12) }}
       >
         <View style={[tw.ph12, tw.pt12, tw.gap16]}>
