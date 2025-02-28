@@ -7,8 +7,9 @@ import { tw } from '../tw';
 export const SelectContainer = (props: {
   value: string;
   placeholder?: string;
+  message?: string;
 }) => (
-  <FieldContainer>
+  <FieldContainer message={props.message}>
     <View style={tw.flexRow}>
       <Text style={[tw.flex1, props.placeholder && tw.textNeutral]}>
         {props.value || props.placeholder}

@@ -7,6 +7,7 @@ const colors = {
   neutral: '#E4E2DE',
   neutralLow: '#EDEDED',
   neutralLower: '#F9F9F9',
+  error: '#C92A2A',
 };
 
 export const tw = StyleSheet.create({
@@ -40,6 +41,7 @@ export const tw = StyleSheet.create({
   border1: { borderWidth: 1 },
 
   borderNeutral: { borderColor: colors.neutral },
+  borderError: { borderColor: colors.error },
 
   bgWhite: { backgroundColor: colors.white },
   bgNeutralHigher: { backgroundColor: colors.neutralHigher },
@@ -48,10 +50,17 @@ export const tw = StyleSheet.create({
 
   textNeutralHigh: { color: colors.neutralHigh },
   textNeutral: { color: colors.neutral },
+  textError: { color: colors.error },
 
   gap8: { gap: 8 },
   gap16: { gap: 16 },
   gap32: { gap: 32 },
+
+  font14: { fontSize: 14 },
+  font16: { fontSize: 16 },
+  font18: { fontSize: 18 },
+  font24: { fontSize: 24 },
+  font32: { fontSize: 32 },
 
   square100: { width: 100, height: 100 },
   minHeight48: { minHeight: 48 },

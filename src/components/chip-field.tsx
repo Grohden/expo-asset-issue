@@ -8,6 +8,7 @@ import { FieldContainer } from './field-container';
 export const ChipField = (props: {
   value?: string;
   placeholder?: string;
+  message?: string;
 }) => {
   const [list, setList] = useState(() =>
     new Array(10).fill(0).map((_, i) => i),
@@ -15,7 +16,7 @@ export const ChipField = (props: {
 
   return (
     <View style={[tw.flex1, tw.gap8]}>
-      <FieldContainer>
+      <FieldContainer message={props.message}>
         <Text style={[props.placeholder && tw.textNeutral]}>
           {props.value || props.placeholder}
         </Text>

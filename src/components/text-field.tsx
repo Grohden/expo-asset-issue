@@ -8,8 +8,9 @@ export const TextField = (props: {
   value: string;
   onChangeText: (value: string) => void;
   placeholder?: string;
+  message?: string;
 }) => (
-  <FieldContainer>
+  <FieldContainer message={props.message}>
     <TextInput
       style={[tw.flex1]}
       value={props.value}

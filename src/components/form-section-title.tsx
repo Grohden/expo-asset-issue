@@ -16,8 +16,9 @@ export const FormSectionTitle = ({
     onPress={openController.toggle}
   >
     <View style={[tw.gap8, tw.flexRow, tw.itemsCenter]}>
-      <Text>{openController.value ? '⌃' : '>'}</Text>
-      <Text style={tw.flex1}>{title}</Text>
+      <Text style={[tw.flex1, tw.font24]}>
+        {openController.value ? '⌃' : '>'} {title}
+      </Text>
     </View>
   </TouchableOpacity>
 );

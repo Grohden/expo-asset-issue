@@ -1,8 +1,12 @@
 import React from 'react';
 import { FadeIn, FadeOut } from 'react-native-reanimated';
-import { useForm } from 'react-hook-form';
+import type { UseFormReturn } from 'react-hook-form';
+import { Button, View } from 'react-native';
 
-import { useBooleanController } from '../../hooks/use-boolean-controller';
+import {
+  type BooleanController,
+  useBooleanController,
+} from '../../hooks/use-boolean-controller';
 import { tw } from '../../tw';
 import { ChipField } from '../../components/chip-field';
 import { EnterExitAnimatedView } from '../../components/enter-exit-animated-view';
@@ -12,13 +16,28 @@ import { SelectContainer } from '../../components/select-container';
 import { TextField } from '../../components/text-field';
 import { TestController } from './test-controller';
 
-export const TestSection = () => {
-  const section = useBooleanController(false);
-  const form = useForm();
+const required = { required: 'This field is required' };
+
+export const TestSection = ({
+  openController,
+  form,
+}: {
+  openController?: BooleanController;
+  form: UseFormReturn<any>;
+}) => {
+  const section = useBooleanController(false, openController);
+
+  const handleSubmit = form.handleSubmit(
+    (data) => console.log(data),
+    (data) => console.log(data),
+  );
 
   return (
     <FormSection>
-      <FormSectionTitle title="Dawg" openController={section} />
+      <View style={tw.gap8}>
+        <Button title="Trigger Validations" onPress={handleSubmit} />
+        <FormSectionTitle title="Form Section" openController={section} />
+      </View>
       {section.value && (
         <EnterExitAnimatedView
           entering={FadeIn}
@@ -28,48 +47,74 @@ export const TestSection = () => {
           <TestController
             name="testOne"
             control={form.control}
-            render={({ field }) => (
-              <SelectContainer value={field.value} placeholder={field.name} />
+            rules={required}
+            render={({ field, fieldState }) => (
+              <SelectContainer
+                value={field.value}
+                placeholder={field.name}
+                message={fieldState.error?.message}
+              />
             )}
           />
           <TestController
             name="testTwo"
             control={form.control}
-            render={({ field }) => (
+            rules={required}
+            render={({ field, fieldState }) => (
               <TextField
                 value={field.value}
                 onChangeText={field.onChange}
                 placeholder={field.name}
+                message={fieldState.error?.message}
               />
             )}
           />
           <TestController
             name="testThree"
             control={form.control}
-            render={({ field }) => <ChipField placeholder={field.name} />}
+            rules={required}
+            render={({ field, fieldState }) => (
+              <ChipField
+                placeholder={field.name}
+                message={fieldState.error?.message}
+              />
+            )}
           />
           <TestController
             name="testFour"
             control={form.control}
-            render={({ field }) => (
-              <SelectContainer value={field.value} placeholder={field.name} />
+            rules={required}
+            render={({ field, fieldState }) => (
+              <SelectContainer
+                value={field.value}
+                placeholder={field.name}
+                message={fieldState.error?.message}
+              />
             )}
           />
           <TestController
             name="testFive"
             control={form.control}
-            render={({ field }) => (
+            rules={required}
+            render={({ field, fieldState }) => (
               <TextField
                 value={field.value}
                 onChangeText={field.onChange}
                 placeholder={field.name}
+                message={fieldState.error?.message}
               />
             )}
           />
           <TestController
             name="testSix"
             control={form.control}
-            render={({ field }) => <ChipField placeholder={field.name} />}
+            rules={required}
+            render={({ field, fieldState }) => (
+              <ChipField
+                placeholder={field.name}
+                message={fieldState.error?.message}
+              />
+            )}
           />
         </EnterExitAnimatedView>
       )}
