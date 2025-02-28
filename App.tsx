@@ -1,59 +1,26 @@
-import React, {useEffect} from 'react';
+import 'expo-image';
+import 'expo-dev-client';
+import React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
 import {
-  Image,
-  SafeAreaView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+  SafeAreaProvider,
+  initialWindowMetrics,
+} from 'react-native-safe-area-context';
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
 
-import { Image as ExpoImage } from 'expo-image';
-import {Asset} from 'expo-asset';
+import {Navigator} from './src/router';
+import {tw} from './src/tw';
 
-
-import {
-  Colors,
-} from 'react-native/Libraries/NewAppScreen';
-
-
-import { Images } from './src/assets';
-
-function App(): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
-  useEffect(() => {
-    console.log('Asset Details:', Images.dawg);
-    console.log('Module Details:', Asset.fromModule(Images.dawg));
-  }, []);
-
+function App() {
   return (
-    <SafeAreaView style={[backgroundStyle, styles.flex1]}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <View
-        style={[backgroundStyle, styles.flex1, styles.alignCenter, styles.justifyCenter]}
-      >
-        <Image source={Images.dawg} style={styles.square100} />
-        <ExpoImage source={Images.dawg} style={styles.square100} />
-        <Text>Dawg blink ;D</Text>
-      </View>
-    </SafeAreaView>
+    <SafeAreaProvider initialMetrics={initialWindowMetrics}>
+      <GestureHandlerRootView style={tw.flex1}>
+        <NavigationContainer>
+          <Navigator />
+        </NavigationContainer>
+      </GestureHandlerRootView>
+    </SafeAreaProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  flex1: { flex: 1 },
-  alignCenter: { alignItems: 'center' },
-  justifyCenter: { justifyContent: 'center' },
-  square100: { width: 100, height: 100 },
-});
 
 export default App;
