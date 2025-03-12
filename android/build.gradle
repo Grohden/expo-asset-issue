@@ -10,11 +10,15 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        // https://help.fullstory.com/hc/en-us/articles/360040596093-Getting-Started-with-Android-Data-Capture
+        maven { url "https://maven.fullstory.com" }
     }
     dependencies {
         classpath("com.android.tools.build:gradle")
         classpath("com.facebook.react:react-native-gradle-plugin")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
+        // https://help.fullstory.com/hc/en-us/articles/360040596093-Getting-Started-with-Android-Data-Capture
+        classpath("com.fullstory:gradle-plugin-local:1.56.0")
     }
 }
 

@@ -1,6 +1,12 @@
 apply plugin: "com.android.application"
+// https://help.fullstory.com/hc/en-us/articles/360040596093-Getting-Started-with-Android-Data-Capture
+apply plugin: "fullstory"
 apply plugin: "org.jetbrains.kotlin.android"
 apply plugin: "com.facebook.react"
+
+fullstory {
+    org ''
+}
 
 /**
  * This is the configuration block to customize your React Native Android app.
