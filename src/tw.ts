@@ -2,7 +2,8 @@ import { StyleSheet } from 'react-native';
 
 const colors = {
   white: '#FFFFFF',
-  neutralHigher: '#818181',
+  black: '#000000',
+  neutralHigher: '#3A3A3A',
   neutralHigh: '#5E5C5C',
   neutral: '#E4E2DE',
   neutralLow: '#EDEDED',
@@ -29,6 +30,11 @@ export const tw = StyleSheet.create({
   pv6: { paddingVertical: 6 },
   pv24: { paddingVertical: 24 },
 
+  pl12: { paddingLeft: 12 },
+  pl16: { paddingLeft: 16 },
+
+  pr12: { paddingRight: 12 },
+
   ph12: { paddingHorizontal: 12 },
   ph16: { paddingHorizontal: 16 },
 
@@ -48,9 +54,14 @@ export const tw = StyleSheet.create({
   bgNeutralLow: { backgroundColor: colors.neutralLow },
   bgNeutralLower: { backgroundColor: colors.neutralLower },
 
+  textNeutralHigher: { color: colors.neutralHigher },
   textNeutralHigh: { color: colors.neutralHigh },
   textNeutral: { color: colors.neutral },
   textError: { color: colors.error },
+  textBlack: { color: colors.black },
+  textWhite: { color: colors.white },
+
+  textCenter: { textAlign: 'center' },
 
   gap8: { gap: 8 },
   gap16: { gap: 16 },
@@ -62,6 +73,10 @@ export const tw = StyleSheet.create({
   font24: { fontSize: 24 },
   font32: { fontSize: 32 },
 
+  square16: { width: 16, height: 16 },
+  square20: { width: 20, height: 20 },
+  square24: { width: 24, height: 24 },
   square100: { width: 100, height: 100 },
+
   minHeight48: { minHeight: 48 },
 });

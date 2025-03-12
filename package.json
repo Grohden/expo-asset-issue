@@ -13,6 +13,8 @@
     "codegen:assets": "node ./scripts/generate-asset-indexes.mjs"
   },
   "dependencies": {
+    "@react-native-vector-icons/common": "^11.0.0",
+    "@react-native-vector-icons/fontawesome6": "^6.7.1",
     "@react-navigation/native": "^6.0.8",
     "@react-navigation/stack": "^6.3.21",
     "expo": "^52.0.0",
