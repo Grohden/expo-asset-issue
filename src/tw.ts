@@ -50,6 +50,8 @@ export const tw = StyleSheet.create({
   borderError: { borderColor: colors.error },
 
   bgWhite: { backgroundColor: colors.white },
+  bgLighter: { backgroundColor: colors.white },
+  bgDark: { backgroundColor: colors.black },
   bgNeutralHigher: { backgroundColor: colors.neutralHigher },
   bgNeutralLow: { backgroundColor: colors.neutralLow },
   bgNeutralLower: { backgroundColor: colors.neutralLower },

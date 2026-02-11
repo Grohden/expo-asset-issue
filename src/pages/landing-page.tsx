@@ -3,25 +3,16 @@ import 'expo-dev-client';
 import { useNavigation } from '@react-navigation/native';
 import { Image } from 'expo-image';
 import React from 'react';
-import {
-  Pressable,
-  SafeAreaView,
-  StatusBar,
-  Text,
-  useColorScheme,
-} from 'react-native';
-import { Colors } from 'react-native/Libraries/NewAppScreen';
+import { Pressable, StatusBar, Text, useColorScheme } from 'react-native';
 
 import { Images } from '../assets';
+import { SafeAreaView } from '../components/safe-area-view';
 import { tw } from '../tw';
 
 export function LandingPage() {
   const navigation = useNavigation();
   const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
+  const backgroundStyle = isDarkMode ? tw.bgDark : tw.bgWhite;
 
   return (
     <SafeAreaView style={[backgroundStyle, tw.flex1]}>
