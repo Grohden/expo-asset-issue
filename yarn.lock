@@ -3293,6 +3293,8 @@ __metadata:
     react-native: "npm:0.81.5"
     react-native-gesture-handler: "npm:^2.30.0"
     react-native-keyboard-controller: "npm:^1.20.7"
+    react-native-nitro-cookies: "npm:^1.0.0"
+    react-native-nitro-modules: "npm:^0.33.9"
     react-native-reanimated: "npm:^4.2.1"
     react-native-safe-area-context: "npm:^5.5.2"
     react-native-screens: "npm:^4.23.0"
@@ -7921,6 +7923,27 @@ __metadata:
     react-native: "*"
     react-native-reanimated: ">=3.0.0"
   checksum: 10c0/f3a1682552ed90f086f4442ba2eebfb2080451e4c9d686345ba92b8fbeca3498172e6b302a413406fabe9ab06cc19c67dbec22a7703b72342f89d39fce136db3
+  languageName: node
+  linkType: hard
+
+"react-native-nitro-cookies@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "react-native-nitro-cookies@npm:1.0.0"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+    react-native-nitro-modules: ^0.31.4
+  checksum: 10c0/910fc43bdefde49f65c16038dfb68731903521ea1edce1bea7e54b4fda3bc2a731443756001c6c86766e11979d9ee4a663c153eab2e2bb077e420d03250d5603
+  languageName: node
+  linkType: hard
+
+"react-native-nitro-modules@npm:^0.33.9":
+  version: 0.33.9
+  resolution: "react-native-nitro-modules@npm:0.33.9"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 10c0/1784fb51abbca6f82d792134055352c42a3bafb3450fc326b04f3cea092126ab1c9ebf152fc0ca43130c46f1537996b06ff33e644a576b03eb97f4413f5c76c3
   languageName: node
   linkType: hard
 
