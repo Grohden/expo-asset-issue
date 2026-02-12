@@ -1,6 +1,6 @@
+import CookieManager from '@preeternal/react-native-cookie-manager';
 import { useEffect, useRef, useState } from 'react';
 import { BackHandler } from 'react-native';
-import { NitroCookies as CookieManager } from 'react-native-nitro-cookies';
 import WebView from 'react-native-webview';
 import { SafeAreaView } from '@/src/domains/app/components/safe-area-view';
 import { tw } from '@/src/domains/app/tw';
