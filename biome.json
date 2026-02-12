@@ -1,28 +1,27 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.3.15/schema.json",
   "files": {
     "maxSize": 4000000,
-    "ignore": [
-      "./scripts",
-      "./ios",
-      "./android",
-      "./src/assets/*.json",
-      ".storybook/storybook.requires.ts",
-      "./tmp",
-      "./.idea",
-      "./vendor"
+    "includes": [
+      "**",
+      "!scripts",
+      "!ios",
+      "!android",
+      "!src/assets/**/*.json",
+      "!**/.storybook/storybook.requires.ts",
+      "!tmp",
+      "!.idea",
+      "!vendor"
     ]
   },
-  "organizeImports": {
-    "enabled": true
-  },
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
   "formatter": {
-    "ignore": ["./package.json"],
+    "includes": ["**", "!package.json"],
     "enabled": true,
     "indentStyle": "space"
   },
   "linter": {
-    "ignore": ["./src/generated/**"],
+    "includes": ["**", "!src/generated/**"],
     "enabled": true,
     "rules": {
       "recommended": true,
@@ -48,11 +47,10 @@
             "filenameCases": ["kebab-case"],
             "requireAscii": true
           }
-        }
-      },
-      "nursery": {
+        },
         "useConsistentCurlyBraces": "error"
-      }
+      },
+      "nursery": {}
     }
   },
   "javascript": {
