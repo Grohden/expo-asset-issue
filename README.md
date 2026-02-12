@@ -5,4 +5,4 @@ configs I'm using currently.
 
 
 This branch contains a repro case for:
-https://github.com/l2hyunwoo/react-native-nitro-cookies/issues/6
+https://github.com/Preeternal/react-native-cookie-manager/issues/2
