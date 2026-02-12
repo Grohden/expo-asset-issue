@@ -60,6 +60,7 @@ export function LandingPage() {
       </View>
       <View style={[tw.flexRow, tw.gap8]}>
         <Action name="Forms" onPress={() => navigation.navigate('TestPage')} />
+        <Action name="WebPage" onPress={() => navigation.navigate('WebPage')} />
       </View>
     </SafeAreaView>
   );

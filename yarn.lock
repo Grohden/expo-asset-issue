@@ -3299,6 +3299,7 @@ __metadata:
     react-native-safe-area-context: "npm:^5.5.2"
     react-native-screens: "npm:^4.23.0"
     react-native-scroll-into-view: "npm:^2.0.2"
+    react-native-webview: "npm:^13.16.0"
     react-native-worklets: "npm:^0.7.3"
     react-test-renderer: "npm:19.1.0"
     typescript: "npm:^5.8.3"
@@ -5565,7 +5566,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"invariant@npm:^2.2.4":
+"invariant@npm:2.2.4, invariant@npm:^2.2.4":
   version: 2.2.4
   resolution: "invariant@npm:2.2.4"
   dependencies:
@@ -7993,6 +7994,19 @@ __metadata:
     react: "*"
     react-native: "*"
   checksum: 10c0/c166a863acd888c928d6d7d379e1622a274d451584941d22da2b32c1854a1bd1ace6761fed37e21f99cd75992f0b22531ed9987726cc2beb6d7655a895212236
+  languageName: node
+  linkType: hard
+
+"react-native-webview@npm:^13.16.0":
+  version: 13.16.0
+  resolution: "react-native-webview@npm:13.16.0"
+  dependencies:
+    escape-string-regexp: "npm:^4.0.0"
+    invariant: "npm:2.2.4"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 10c0/813c3cb176effd65f8d9b45eb00732ac87bfab2d0b1c4016f0d43e95f9a287e495913540ebe4f47da868c804f6fdcb2246a2156d6e31712bd426b43bcecc8e7f
   languageName: node
   linkType: hard
 
