@@ -27,6 +27,8 @@ export const tw = StyleSheet.create({
 
   selfCenter: { alignSelf: 'center' },
 
+  p8: { padding: 8 },
+
   pv6: { paddingVertical: 6 },
   pv24: { paddingVertical: 24 },
 
