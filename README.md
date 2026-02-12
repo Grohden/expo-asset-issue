@@ -4,4 +4,5 @@ This is a project for reproduction cases of issues I find in react native, it cl
 configs I'm using currently.
 
 
-Reproduction cases will be mainly in branches.
+This branch contains a repro case for:
+https://github.com/l2hyunwoo/react-native-nitro-cookies/issues/6
