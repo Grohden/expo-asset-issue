@@ -2,9 +2,7 @@ import 'expo-image';
 import 'expo-dev-client';
 import { useNavigation } from '@react-navigation/native';
 import { Image } from 'expo-image';
-import { useEffect } from 'react';
 import { Pressable, StatusBar, Text, useColorScheme, View } from 'react-native';
-import NitroCookies from 'react-native-nitro-cookies';
 import { Images } from '@/src/assets';
 import { SafeAreaView } from '@/src/domains/app/components/safe-area-view';
 import { tw } from '@/src/domains/app/tw';
@@ -28,17 +26,6 @@ export function LandingPage() {
   const navigation = useNavigation();
   const isDarkMode = useColorScheme() === 'dark';
   const backgroundStyle = isDarkMode ? tw.bgDark : tw.bgWhite;
-
-  useEffect(() => {
-    void (async () => {
-      try {
-        await NitroCookies.clearAll();
-        await NitroCookies.clearAll(true);
-      } catch (error) {
-        console.log('Error clearing cookies', error);
-      }
-    })();
-  }, []);
 
   return (
     <SafeAreaView
