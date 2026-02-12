@@ -4,11 +4,11 @@ import { NavigationContainer } from '@react-navigation/native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { KeyboardProvider } from 'react-native-keyboard-controller';
 import {
-  SafeAreaProvider,
   initialWindowMetrics,
+  SafeAreaProvider,
 } from 'react-native-safe-area-context';
-import { Navigator } from './router';
-import { tw } from './tw';
+import { Navigator } from './domains/app/router';
+import { tw } from './domains/app/tw';
 
 function App() {
   return (

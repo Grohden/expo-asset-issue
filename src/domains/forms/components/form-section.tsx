@@ -1,14 +1,12 @@
-import React from 'react';
 import type { UseFormReturn } from 'react-hook-form';
 import { Button, View } from 'react-native';
 import { FadeIn, FadeOut } from 'react-native-reanimated';
-
-import { tw } from '../../../tw';
-import { EnterExitAnimatedView } from '../../app/components/enter-exit-animated-view';
+import { EnterExitAnimatedView } from '@/src/domains/app/components/enter-exit-animated-view';
+import { tw } from '@/src/domains/app/tw';
 import {
   type BooleanController,
   useBooleanController,
-} from '../hooks/use-boolean-controller';
+} from '@/src/domains/forms/hooks/use-boolean-controller';
 import { ChipField } from './chip-field';
 import { FormController } from './form-controller';
 import { FormSectionContainer } from './form-section-container';

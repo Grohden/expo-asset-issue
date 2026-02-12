@@ -1,14 +1,13 @@
 import 'expo-image';
 import 'expo-dev-client';
 import { useForm } from 'react-hook-form';
-import { StatusBar, View, useColorScheme } from 'react-native';
+import { StatusBar, useColorScheme, View } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-controller';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { wrapScrollView } from 'react-native-scroll-into-view';
-
-import { tw } from '../../../tw';
-import { FormSection } from '../components/form-section';
-import { useBooleanController } from '../hooks/use-boolean-controller';
+import { tw } from '@/src/domains/app/tw';
+import { FormSection } from '@/src/domains/forms/components/form-section';
+import { useBooleanController } from '@/src/domains/forms/hooks/use-boolean-controller';
 
 const CustomScrollView = wrapScrollView(KeyboardAwareScrollView);
 

@@ -1,7 +1,6 @@
-import React from 'react';
 import { TextInput } from 'react-native';
 
-import { tw } from '../../../tw';
+import { tw } from '@/src/domains/app/tw';
 import { FieldContainer } from './field-container';
 
 export const TextField = (props: {

@@ -1,9 +1,7 @@
 import FontAwesome6 from '@react-native-vector-icons/fontawesome6';
-import React from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
-
-import { tw } from '../../../tw';
-import type { BooleanController } from '../hooks/use-boolean-controller';
+import { tw } from '@/src/domains/app/tw';
+import type { BooleanController } from '@/src/domains/forms/hooks/use-boolean-controller';
 
 export const FormSectionTitle = ({
   title,

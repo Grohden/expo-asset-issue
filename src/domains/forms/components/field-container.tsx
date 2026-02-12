@@ -1,12 +1,15 @@
 import type { ReactNode } from 'react';
 import { Text, View } from 'react-native';
 
-import { tw } from '../../../tw';
+import { tw } from '@/src/domains/app/tw';
 
 export const FieldContainer = ({
   message,
   children,
-}: { children: ReactNode; message?: string }) => (
+}: {
+  children: ReactNode;
+  message?: string;
+}) => (
   <View style={[tw.gap8]}>
     <View
       style={[

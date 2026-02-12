@@ -1,8 +1,7 @@
 import FontAwesome6 from '@react-native-vector-icons/fontawesome6';
-import React from 'react';
 import { Pressable, Text } from 'react-native';
 
-import { tw } from '../../../tw';
+import { tw } from '@/src/domains/app/tw';
 import { FieldContainer } from './field-container';
 
 export const SelectContainer = (props: {

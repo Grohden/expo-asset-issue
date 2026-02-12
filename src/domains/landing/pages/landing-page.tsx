@@ -2,12 +2,11 @@ import 'expo-image';
 import 'expo-dev-client';
 import { useNavigation } from '@react-navigation/native';
 import { Image } from 'expo-image';
-import React from 'react';
 import { Pressable, StatusBar, Text, useColorScheme } from 'react-native';
 
-import { Images } from '../../../assets';
-import { tw } from '../../../tw';
-import { SafeAreaView } from '../../app/components/safe-area-view';
+import { Images } from '@/src/assets';
+import { SafeAreaView } from '@/src/domains/app/components/safe-area-view';
+import { tw } from '@/src/domains/app/tw';
 
 export function LandingPage() {
   const navigation = useNavigation();

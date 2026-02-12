@@ -1,11 +1,10 @@
 import {
-  TransitionPresets,
   createStackNavigator,
+  TransitionPresets,
 } from '@react-navigation/stack';
-import React from 'react';
 
-import { FormPage } from './domains/forms/pages/form-page';
-import { LandingPage } from './domains/landing/pages/landing-page';
+import { FormPage } from '@/src/domains/forms/pages/form-page';
+import { LandingPage } from '@/src/domains/landing/pages/landing-page';
 
 const Modal = createStackNavigator();
 

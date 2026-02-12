@@ -49,6 +49,7 @@ export const tw = StyleSheet.create({
   borderNeutral: { borderColor: colors.neutral },
   borderError: { borderColor: colors.error },
 
+  // TODO: properly design semantic colors
   bgWhite: { backgroundColor: colors.white },
   bgLighter: { backgroundColor: colors.white },
   bgDark: { backgroundColor: colors.black },
