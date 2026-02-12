@@ -1,24 +1,24 @@
 import React from 'react';
-import { FadeIn, FadeOut } from 'react-native-reanimated';
 import type { UseFormReturn } from 'react-hook-form';
 import { Button, View } from 'react-native';
+import { FadeIn, FadeOut } from 'react-native-reanimated';
 
+import { tw } from '../../../tw';
+import { EnterExitAnimatedView } from '../../app/components/enter-exit-animated-view';
 import {
   type BooleanController,
   useBooleanController,
-} from '../../hooks/use-boolean-controller';
-import { tw } from '../../tw';
-import { ChipField } from '../../components/chip-field';
-import { EnterExitAnimatedView } from '../../components/enter-exit-animated-view';
-import { FormSection } from '../../components/form-section';
-import { FormSectionTitle } from '../../components/form-section-title';
-import { SelectContainer } from '../../components/select-container';
-import { TextField } from '../../components/text-field';
-import { TestController } from './test-controller';
+} from '../hooks/use-boolean-controller';
+import { ChipField } from './chip-field';
+import { FormController } from './form-controller';
+import { FormSectionContainer } from './form-section-container';
+import { FormSectionTitle } from './form-section-title';
+import { SelectContainer } from './select-container';
+import { TextField } from './text-field';
 
 const required = { required: 'This field is required' };
 
-export const TestSection = ({
+export const FormSection = ({
   openController,
   form,
 }: {
@@ -34,7 +34,7 @@ export const TestSection = ({
   );
 
   return (
-    <FormSection>
+    <FormSectionContainer>
       <View style={tw.gap8}>
         <Button title="Trigger Validations" onPress={handleSubmit} />
         <FormSectionTitle title="Form Section" openController={section} />
@@ -45,7 +45,7 @@ export const TestSection = ({
           exiting={FadeOut}
           style={tw.gap16}
         >
-          <TestController
+          <FormController
             name="testOne"
             control={form.control}
             rules={required}
@@ -58,7 +58,7 @@ export const TestSection = ({
               />
             )}
           />
-          <TestController
+          <FormController
             name="testTwo"
             control={form.control}
             rules={required}
@@ -71,7 +71,7 @@ export const TestSection = ({
               />
             )}
           />
-          <TestController
+          <FormController
             name="testThree"
             control={form.control}
             rules={required}
@@ -82,7 +82,7 @@ export const TestSection = ({
               />
             )}
           />
-          <TestController
+          <FormController
             name="testFour"
             control={form.control}
             rules={required}
@@ -95,7 +95,7 @@ export const TestSection = ({
               />
             )}
           />
-          <TestController
+          <FormController
             name="testFive"
             control={form.control}
             rules={required}
@@ -108,7 +108,7 @@ export const TestSection = ({
               />
             )}
           />
-          <TestController
+          <FormController
             name="testSix"
             control={form.control}
             rules={required}
@@ -121,6 +121,6 @@ export const TestSection = ({
           />
         </EnterExitAnimatedView>
       )}
-    </FormSection>
+    </FormSectionContainer>
   );
 };

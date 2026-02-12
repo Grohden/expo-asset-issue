@@ -1,9 +1,9 @@
+import FontAwesome6 from '@react-native-vector-icons/fontawesome6';
 import React from 'react';
 import { Pressable, Text } from 'react-native';
-import FontAwesome6 from '@react-native-vector-icons/fontawesome6';
 
-import { layoutAnimation } from '../styles-animation';
-import { tw } from '../tw';
+import { layoutAnimation } from '../../../styles-animation';
+import { tw } from '../../../tw';
 import { EnterExitAnimatedView } from './enter-exit-animated-view';
 
 export const Chip = (props: { text: string; onPress?: () => void }) => (

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Text, TextInput, View } from 'react-native';
 
-import { tw } from '../tw';
-import { Chip } from './chip';
+import { tw } from '../../../tw';
+import { Chip } from '../../app/components/chip';
 import { FieldContainer } from './field-container';
 
 export const ChipField = (props: {

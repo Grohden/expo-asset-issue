@@ -4,8 +4,8 @@ import {
 } from '@react-navigation/stack';
 import React from 'react';
 
-import { LandingPage } from './pages/landing-page';
-import { TestPage } from './pages/test/test-page';
+import { FormPage } from './domains/forms/pages/form-page';
+import { LandingPage } from './domains/landing/pages/landing-page';
 
 const Modal = createStackNavigator();
 
@@ -19,7 +19,7 @@ export function Navigator() {
         }}
       >
         <Modal.Screen name="LandingPage" component={LandingPage} />
-        <Modal.Screen name="TestPage" component={TestPage} />
+        <Modal.Screen name="TestPage" component={FormPage} />
       </Modal.Group>
     </Modal.Navigator>
   );

@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import { Text, View } from 'react-native';
 
-import { tw } from '../tw';
+import { tw } from '../../../tw';
 
 export const FieldContainer = ({
   message,

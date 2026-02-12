@@ -1,11 +1,11 @@
 import type { ReactNode } from 'react';
 import React from 'react';
 
-import { layoutAnimation } from '../styles-animation';
-import { tw } from '../tw';
-import { EnterExitAnimatedView } from './enter-exit-animated-view';
+import { layoutAnimation } from '../../../styles-animation';
+import { tw } from '../../../tw';
+import { EnterExitAnimatedView } from '../../app/components/enter-exit-animated-view';
 
-export const FormSection = ({ children }: { children: ReactNode }) => (
+export const FormSectionContainer = ({ children }: { children: ReactNode }) => (
   <EnterExitAnimatedView
     layout={layoutAnimation.default}
     style={[
